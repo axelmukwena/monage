@@ -11,3 +11,179 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main {
+  margin: 50px;
+}
+
+.tasks-header {
+  background-color: #cacaca;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 30px;
+  padding: 7px 0;
+}
+
+.tasks-header, .tasks-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.tasks-header .title {
+  padding: 0 10px;
+}
+
+.tasks-header .title, .tasks-row .title {
+  text-align: left;
+  width: 100%;
+}
+
+.tasks-row .title {
+  padding: 4px 10px;
+}
+
+.tasks-row {
+  padding: 5px 0;
+  border-radius: 9px;
+}
+
+.tasks-row:hover {
+  background-color: #ededed;
+}
+
+.tasks-row.cursor:hover {
+  cursor: pointer;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.task-container {
+  border: 1px solid #cacaca;
+  border-radius: 9px;
+  margin: 15px;
+}
+
+.task-children {
+  display: none;
+}
+
+.not-completed, .partially-completed, .completed {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.not-completed {
+  background-color: red;
+}
+
+.partially-completed {
+  background-color: yellow;
+}
+
+.completed {
+  background-color: green;
+}
+
+.tasks-body { 
+  width: 55%;
+}
+
+.task-show {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 35%;
+  margin: 15px;
+}
+
+.error {
+  color: red;
+  font-size: 9px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, select {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.form-item:first-child {
+  margin: 0 0 10px 0;
+}
+
+.form-item {
+  margin: 10px 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+  
+}
+
+.not-comp, .partially-comp, .comp, .submit {
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+  font-weight: 600;
+}
+
+.not-comp.active, .not-comp:hover {
+  background-color: red;
+}
+
+.partially-comp.active, .partially-comp:hover {
+  background-color: yellow;
+}
+
+.comp.active, .comp:hover {
+  background-color: green;
+}
+
+.submit {
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+
+form {
+  width: 100%;
+}

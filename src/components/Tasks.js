@@ -58,11 +58,11 @@ const Tasks = function Tasks({ tasks }) {
 
             <ReactPaginate
               breakLabel="..."
-              nextLabel="next >"
+              nextLabel={<button type="button">Next</button>}
               onPageChange={handlePaginateClick}
               pageRangeDisplayed={5}
               pageCount={pageCount}
-              previousLabel="< previous"
+              previousLabel={<button type="button">Prevous</button>}
               renderOnZeroPageCount={null}
             />
           </div>

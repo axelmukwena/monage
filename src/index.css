@@ -187,3 +187,28 @@ input, select {
 form {
   width: 100%;
 }
+
+ul {
+  list-style-type: none;
+}
+
+.tasks-body ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.tasks-body ul li {
+  margin: 0 10px;
+}
+
+.tasks-body ul li button {
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+}
